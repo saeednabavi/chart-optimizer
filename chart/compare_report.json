@@ -1,0 +1,284 @@
+{
+  "ticker": "BRS00927",
+  "tf": "1d",
+  "adj": "adjusted",
+  "bars": 1955,
+  "indicators": {
+    "MS": {
+      "values": {
+        "MS_OB": 238.2031341060995,
+        "markers": 0,
+        "title": "MS 5 50 100 16 200 -200"
+      },
+      "compare": {
+        "chartix_sample_xauusd": [
+          -205.46,
+          -205.46,
+          -153.94,
+          -153.94,
+          310.89,
+          -269.16
+        ],
+        "local_last": [
+          218.2031341060995,
+          209.86753936011456,
+          -87.62446225860862,
+          283.1528671268618
+        ],
+        "note": "XAUUSD≠عیار — compare shape/order locally; absolute values differ by symbol"
+      },
+      "ok": true
+    },
+    "TCG AI Tools": {
+      "values": {
+        "TCG_CrossUp": 0.28,
+        "TCG_CrossDn": -0.28,
+        "TCG_BG": 1.0,
+        "markers": 0,
+        "title": "TCG AI Tools hl2 50 2 70 30 14"
+      },
+      "compare": null,
+      "ok": true
+    },
+    "VTX Oscillator": {
+      "values": {
+        "VI+": 82.88995275689915,
+        "VI-": 50.90075442247659,
+        "SRO_VTX": 82.88995275689915,
+        "candle_close": 80.0,
+        "markers": 0,
+        "title": "VTX Oscillator 14 Close"
+      },
+      "compare": {
+        "chartix_sample_xauusd": [
+          10.27
+        ],
+        "local_last": [
+          82.88995275689915
+        ]
+      },
+      "ok": true
+    },
+    "Eagles Nest - CHARTIX": {
+      "values": {
+        "Eagles_K": 86.1314353688238,
+        "Eagles_D": 89.40313079029755,
+        "Eagles_BG": 100.0,
+        "markers": 186,
+        "title": "Eagles Nest - CHARTIX"
+      },
+      "compare": {
+        "chartix_sample_xauusd": [
+          16.39,
+          16.56,
+          80.0,
+          20.0,
+          50.0
+        ],
+        "local_last": [
+          86.1314353688238,
+          89.40313079029755
+        ]
+      },
+      "ok": true
+    },
+    "BvB": {
+      "values": {
+        "BvB_Dots": 87.6346371201403,
+        "BvB": 38.75775115885476,
+        "markers": 0,
+        "title": "BvB 14 120 80"
+      },
+      "compare": {
+        "chartix_sample_xauusd": [
+          -23.26
+        ],
+        "local_last": [
+          38.75775115885476
+        ],
+        "note": "Different symbol; check sign/magnitude scale"
+      },
+      "ok": true
+    },
+    "GainzAlgo Pro": {
+      "values": {
+        "markers": 73,
+        "title": "GainzAlgo Pro"
+      },
+      "compare": null,
+      "ok": true
+    },
+    "EngulfingCandle": {
+      "values": {
+        "markers": 53,
+        "title": "EngulfingCandle"
+      },
+      "compare": null,
+      "ok": true
+    },
+    "UT Bot Alerts": {
+      "values": {
+        "markers": 263,
+        "title": "UT Bot Alerts"
+      },
+      "compare": null,
+      "ok": true
+    }
+  },
+  "schema_ok": true,
+  "schema": {
+    "MS": {
+      "inputs": [
+        "Smoother",
+        "SupResPeriod",
+        "SupResPercentage",
+        "PricePeriod",
+        "Overbought",
+        "Oversold",
+        "Show OB/OS",
+        "Dynamic zones"
+      ],
+      "missing": [],
+      "styles": [
+        "Candles",
+        "Plot",
+        "Plot",
+        "Plot",
+        "Plot",
+        "Plot",
+        "Plot",
+        "Precision"
+      ]
+    },
+    "TCG AI Tools": {
+      "inputs": [
+        "Price",
+        "Bollinger length",
+        "Bollinger Multiplier",
+        "Overbought",
+        "Oversold",
+        "Length"
+      ],
+      "missing": [],
+      "styles": [
+        "Plot",
+        "BB Cross",
+        "BB Cross",
+        "Backgroud Color",
+        "Backgroud Color",
+        "Precision"
+      ]
+    },
+    "VTX Oscillator": {
+      "inputs": [
+        "Length",
+        "Source"
+      ],
+      "missing": [],
+      "styles": [
+        "Plot",
+        "Plot",
+        "SRO VTX",
+        "Midline",
+        "Overbought",
+        "Oversold",
+        "Hlines Background",
+        "Precision"
+      ]
+    },
+    "Eagles Nest - CHARTIX": {
+      "inputs": [
+        "Length for Main Stochastic",
+        "SmoothK for Main Stochastic",
+        "SmoothD for Main Stochastic",
+        "Upper Line Value",
+        "Lower Line Value",
+        "Show Mid Line",
+        "Highlight Above/Below High/Low Lines",
+        "Highlight Strict Crosses",
+        "Show Strict B/S Letters",
+        "Highlight Any Cross",
+        "Show Any-Cross B/S Letters",
+        "Use Current Chart Resolution",
+        "Use Different Timeframe",
+        "Show 2nd Stoch",
+        "2nd Stoch Timeframe",
+        "Use 2nd Stoch on Current Timeframe",
+        "2nd Stoch Length",
+        "SmoothK for 2nd Stoch",
+        "SmoothD for 2nd Stoch"
+      ],
+      "missing": [],
+      "styles": [
+        "Stoch K",
+        "Stoch D",
+        "2nd Stoch K - Different TimeFrame",
+        "2nd Stoch D - Different TimeFrame",
+        "Upper Line",
+        "Lower Line",
+        "Mid Line",
+        "Buy Signal Strict Criteria",
+        "Sell Signal Strict Criteria",
+        "Buy Signal Any Cross Up",
+        "Sell Signal Any Cross Down",
+        "Background Highlights",
+        "Precision"
+      ]
+    },
+    "BvB": {
+      "inputs": [
+        "BvB Period",
+        "Nomralized bars back",
+        "Line Height"
+      ],
+      "missing": [],
+      "styles": [
+        "Plot",
+        "Plot",
+        "Precision"
+      ]
+    },
+    "GainzAlgo Pro": {
+      "inputs": [
+        "Candle Stability Index",
+        "RSI Index",
+        "Candle Delta Length",
+        "Disable Repeating Signals"
+      ],
+      "missing": [],
+      "styles": [
+        "BUY Signal",
+        "SELL Signal",
+        "Precision"
+      ]
+    },
+    "EngulfingCandle": {
+      "inputs": [
+        "rsi Source",
+        "rsi Length",
+        "rsi Overbought Level",
+        "rsi Oversold Level"
+      ],
+      "missing": [],
+      "styles": [
+        "Bullish",
+        "Bearish",
+        "Precision"
+      ]
+    },
+    "UT Bot Alerts": {
+      "inputs": [
+        "Key Vaule.",
+        "ATR Period",
+        "Signals from Heikin Ashi Candles"
+      ],
+      "missing": [],
+      "styles": [
+        "Bar Color",
+        "BUY",
+        "SELL",
+        "Precision"
+      ]
+    }
+  }
+}

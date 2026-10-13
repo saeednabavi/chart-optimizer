@@ -1,0 +1,23 @@
+{
+  "default": {
+    "minor": {"pct": 5.0, "atr_mult": 0.0, "min_bars": 3},
+    "major": {"pct": 15.0, "atr_mult": 0.0, "min_bars": 10},
+    "atr_period": 50
+  },
+  "1w": {
+    "minor": {"pct": 8.0, "min_bars": 2},
+    "major": {"pct": 25.0, "min_bars": 6}
+  },
+  "1h": {
+    "minor": {"pct": 2.5, "min_bars": 5},
+    "major": {"pct": 8.0, "min_bars": 20}
+  },
+  "30min": {
+    "minor": {"pct": 2.0, "min_bars": 6},
+    "major": {"pct": 6.0, "min_bars": 30}
+  },
+  "15min": {
+    "minor": {"pct": 1.5, "min_bars": 8},
+    "major": {"pct": 5.0, "min_bars": 40}
+  }
+}

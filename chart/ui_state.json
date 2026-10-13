@@ -1,0 +1,21 @@
+{
+  "name": "عیار",
+  "ticker": "BRS00927",
+  "tf": "5min",
+  "adj": "adjusted",
+  "enabled": {
+    "matrix": true,
+    "tcg": false,
+    "vtx": false,
+    "eagles": false,
+    "bvb": false,
+    "gainz": false,
+    "aieng": false,
+    "utbot": false
+  },
+  "pane_heights": {
+    "main": 0.82,
+    "matrix": 0.16
+  },
+  "pivots": "Medium"
+}

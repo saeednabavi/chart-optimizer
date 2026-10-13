@@ -1,0 +1,1186 @@
+[
+  {
+    "name": "# Ai Engulfing Candles-اختصاصی",
+    "short": "EngulfingCandle",
+    "inputs": [
+      {
+        "name": "rsi Source",
+        "type": "source",
+        "defval": "close",
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "rsi Length",
+        "type": "integer",
+        "defval": 14,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "rsi Overbought Level",
+        "type": "integer",
+        "defval": 70,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "rsi Oversold Level",
+        "type": "integer",
+        "defval": 30,
+        "min": null,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "length": 14,
+      "overbought": 70,
+      "oversold": 30,
+      "source": "close"
+    },
+    "style_titles": {
+      "bearish": {
+        "location": "BelowBar",
+        "text": "sell MIT",
+        "title": "Bearish"
+      },
+      "bullish": {
+        "location": "AboveBar",
+        "text": "buy MIT",
+        "title": "Bullish"
+      }
+    },
+    "default_styles": {
+      "bearish": {
+        "color": "#FF5252",
+        "plottype": "shape_triangle_down",
+        "display": 15
+      },
+      "bullish": {
+        "color": "#4CAF50",
+        "plottype": "shape_triangle_up",
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": null,
+    "precision": 4,
+    "plots": [
+      {
+        "id": "bullish",
+        "type": "shapes"
+      },
+      {
+        "id": "bearish",
+        "type": "shapes"
+      }
+    ]
+  },
+  {
+    "name": "# Bulls v Bears-اختصاصی",
+    "short": "BvB",
+    "inputs": [
+      {
+        "name": "BvB Period",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Nomralized bars back",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Line Height",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "id_00": 14,
+      "id_01": 120,
+      "id_02": 80
+    },
+    "style_titles": {
+      "plot_00": {
+        "histogramBase": 0,
+        "title": "Plot"
+      },
+      "plot_01": {
+        "title": "Plot"
+      }
+    },
+    "default_styles": {
+      "plot_00": {
+        "color": "black",
+        "linewidth": 1,
+        "plottype": 5,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_01": {
+        "color": "yellow",
+        "linewidth": 4,
+        "plottype": 6,
+        "linestyle": 0,
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": {
+      "palette_0": {
+        "colors": {
+          "0": {
+            "color": "green",
+            "style": 0,
+            "width": 1
+          },
+          "1": {
+            "color": "red",
+            "style": 0,
+            "width": 1
+          }
+        }
+      },
+      "palette_1": {
+        "colors": {
+          "0": {
+            "color": "green",
+            "style": 0,
+            "width": 1
+          },
+          "1": {
+            "color": "red",
+            "style": 0,
+            "width": 1
+          }
+        }
+      }
+    },
+    "precision": 2,
+    "plots": [
+      {
+        "id": "plot_00",
+        "type": "line"
+      },
+      {
+        "id": "plot_00c",
+        "type": "colorer"
+      },
+      {
+        "id": "plot_01",
+        "type": "line"
+      }
+    ]
+  },
+  {
+    "name": "# Eagles Nest - اختصاصی",
+    "short": "Eagles Nest - CHARTIX",
+    "inputs": [
+      {
+        "name": "Length for Main Stochastic",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "SmoothK for Main Stochastic",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "SmoothD for Main Stochastic",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Upper Line Value",
+        "type": "integer",
+        "defval": null,
+        "min": 50,
+        "max": 90,
+        "options": null
+      },
+      {
+        "name": "Lower Line Value",
+        "type": "integer",
+        "defval": null,
+        "min": 10,
+        "max": 50,
+        "options": null
+      },
+      {
+        "name": "Show Mid Line",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Highlight Above/Below High/Low Lines",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Highlight Strict Crosses",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Show Strict B/S Letters",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Highlight Any Cross",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Show Any-Cross B/S Letters",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Use Current Chart Resolution",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Use Different Timeframe",
+        "type": "resolution",
+        "defval": "60",
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Show 2nd Stoch",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "2nd Stoch Timeframe",
+        "type": "resolution",
+        "defval": "D",
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Use 2nd Stoch on Current Timeframe",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "2nd Stoch Length",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "SmoothK for 2nd Stoch",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "SmoothD for 2nd Stoch",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "length": 14,
+      "length2": 14,
+      "lowerLine": 20,
+      "resolution": "60",
+      "resolution2": "D",
+      "showAnyBackground": false,
+      "showAnyLetters": false,
+      "showHighLowBackground": false,
+      "showMidLine": true,
+      "showSecondStoch": false,
+      "showStrictBackground": true,
+      "showStrictLetters": true,
+      "smoothD": 3,
+      "smoothD2": 3,
+      "smoothK": 3,
+      "smoothK2": 3,
+      "upperLine": 80,
+      "useCurrentResolution": true,
+      "useCurrentResolution2": false
+    },
+    "style_titles": {
+      "anyBuy": {
+        "text": "B",
+        "title": "Buy Signal Any Cross Up"
+      },
+      "anySell": {
+        "text": "S",
+        "title": "Sell Signal Any Cross Down"
+      },
+      "background": {
+        "title": "Background Highlights"
+      },
+      "lower": {
+        "title": "Lower Line"
+      },
+      "middle": {
+        "title": "Mid Line"
+      },
+      "stochD": {
+        "title": "Stoch D"
+      },
+      "stochD2": {
+        "title": "2nd Stoch D - Different TimeFrame"
+      },
+      "stochK": {
+        "title": "Stoch K"
+      },
+      "stochK2": {
+        "title": "2nd Stoch K - Different TimeFrame"
+      },
+      "strictBuy": {
+        "text": "B",
+        "title": "Buy Signal Strict Criteria"
+      },
+      "strictSell": {
+        "text": "S",
+        "title": "Sell Signal Strict Criteria"
+      },
+      "upper": {
+        "title": "Upper Line"
+      }
+    },
+    "default_styles": {
+      "anyBuy": {
+        "color": "#9400D3",
+        "plottype": "shape_label_up",
+        "display": 15
+      },
+      "anySell": {
+        "color": "#FFD700",
+        "plottype": "shape_label_down",
+        "display": 15
+      },
+      "background": {},
+      "lower": {
+        "color": "#9400D3",
+        "linewidth": 3,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "middle": {
+        "color": "gray",
+        "linewidth": 2,
+        "plottype": 0,
+        "linestyle": 2,
+        "display": 15
+      },
+      "stochD": {
+        "color": "#FFD700",
+        "linewidth": 3,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "stochD2": {
+        "color": "yellow",
+        "linewidth": 3,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "stochK": {
+        "color": "#9400D3",
+        "linewidth": 3,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "stochK2": {
+        "color": "orange",
+        "linewidth": 3,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "strictBuy": {
+        "color": "#9400D3",
+        "plottype": "shape_label_up",
+        "display": 15
+      },
+      "strictSell": {
+        "color": "#FFD700",
+        "plottype": "shape_label_down",
+        "display": 15
+      },
+      "upper": {
+        "color": "#FFD700",
+        "linewidth": 3,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": {
+      "backgroundPalette": {
+        "colors": {
+          "0": {
+            "color": "rgba(255, 215, 0, 0.30)",
+            "style": 0,
+            "width": 1
+          },
+          "1": {
+            "color": "rgba(148, 0, 211, 0.30)",
+            "style": 0,
+            "width": 1
+          }
+        }
+      }
+    },
+    "precision": 2,
+    "plots": [
+      {
+        "id": "stochK",
+        "type": "line"
+      },
+      {
+        "id": "stochD",
+        "type": "line"
+      },
+      {
+        "id": "stochK2",
+        "type": "line"
+      },
+      {
+        "id": "stochD2",
+        "type": "line"
+      },
+      {
+        "id": "upper",
+        "type": "line"
+      },
+      {
+        "id": "lower",
+        "type": "line"
+      },
+      {
+        "id": "middle",
+        "type": "line"
+      },
+      {
+        "id": "strictBuy",
+        "type": "shapes"
+      },
+      {
+        "id": "strictSell",
+        "type": "shapes"
+      },
+      {
+        "id": "anyBuy",
+        "type": "shapes"
+      },
+      {
+        "id": "anySell",
+        "type": "shapes"
+      },
+      {
+        "id": "background",
+        "type": "bg_colorer"
+      }
+    ]
+  },
+  {
+    "name": "# GainzAlgo Pro-اختصاصی",
+    "short": "GainzAlgo Pro",
+    "inputs": [
+      {
+        "name": "Candle Stability Index",
+        "type": "float",
+        "defval": null,
+        "min": 0,
+        "max": 1,
+        "options": null
+      },
+      {
+        "name": "RSI Index",
+        "type": "integer",
+        "defval": null,
+        "min": 0,
+        "max": 100,
+        "options": null
+      },
+      {
+        "name": "Candle Delta Length",
+        "type": "integer",
+        "defval": null,
+        "min": 3,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Disable Repeating Signals",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "id_0": 0.5,
+      "id_1": 50,
+      "id_2": 5,
+      "id_3": false
+    },
+    "style_titles": {
+      "plot_0": {
+        "text": "BUY",
+        "title": "BUY Signal"
+      },
+      "plot_1": {
+        "text": "SELL",
+        "title": "SELL Signal"
+      }
+    },
+    "default_styles": {
+      "plot_0": {
+        "color": "#1dff28",
+        "plottype": "shape_label_up",
+        "display": 15
+      },
+      "plot_1": {
+        "color": "#ff0000",
+        "plottype": "shape_label_down",
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": null,
+    "precision": null,
+    "plots": [
+      {
+        "id": "plot_0",
+        "type": "shapes"
+      },
+      {
+        "id": "plot_1",
+        "type": "shapes"
+      }
+    ]
+  },
+  {
+    "name": "# Matrix Series-اختصاصی",
+    "short": "MS",
+    "inputs": [
+      {
+        "name": "Smoother",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "SupResPeriod",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "SupResPercentage",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "PricePeriod",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Overbought",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Oversold",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Show OB/OS",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Dynamic zones",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "id_00": 5,
+      "id_01": 50,
+      "id_02": 100,
+      "id_03": 16,
+      "id_04": 200,
+      "id_05": -200,
+      "id_06": false,
+      "id_07": true
+    },
+    "style_titles": {
+      "plot_00": {
+        "title": "Plot"
+      },
+      "plot_01": {
+        "title": "Plot"
+      },
+      "plot_02": {
+        "title": "Plot"
+      },
+      "plot_03": {
+        "title": "Plot"
+      },
+      "plot_04": {
+        "title": "Plot"
+      },
+      "plot_05": {
+        "title": "Plot"
+      }
+    },
+    "default_styles": {
+      "plot_00": {
+        "color": "green",
+        "linewidth": 2,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_01": {
+        "color": "red",
+        "linewidth": 2,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_02": {
+        "color": "aqua",
+        "linewidth": 2,
+        "plottype": 3,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_03": {
+        "color": "aqua",
+        "linewidth": 2,
+        "plottype": 3,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_04": {
+        "color": "black",
+        "linewidth": 1,
+        "plottype": 7,
+        "linestyle": 2,
+        "display": 15
+      },
+      "plot_05": {
+        "color": "black",
+        "linewidth": 1,
+        "plottype": 7,
+        "linestyle": 2,
+        "display": 15
+      }
+    },
+    "ohlcPlots": {
+      "plotcandle_0": {
+        "borderColor": "black",
+        "color": "#2196F3",
+        "display": 15,
+        "drawBorder": true,
+        "drawWick": true,
+        "plottype": "ohlc_candles",
+        "wickColor": "#737375"
+      }
+    },
+    "palettes": {
+      "palette_0": {
+        "colors": {
+          "0": {
+            "color": "red",
+            "style": 0,
+            "width": 2
+          },
+          "1": {
+            "color": "green",
+            "style": 0,
+            "width": 2
+          }
+        }
+      }
+    },
+    "precision": 2,
+    "plots": [
+      {
+        "id": "plot_0",
+        "type": "ohlc_open"
+      },
+      {
+        "id": "plot_1",
+        "type": "ohlc_high"
+      },
+      {
+        "id": "plot_2",
+        "type": "ohlc_low"
+      },
+      {
+        "id": "plot_3",
+        "type": "ohlc_close"
+      },
+      {
+        "id": "plot_4",
+        "type": "ohlc_colorer"
+      },
+      {
+        "id": "plot_00",
+        "type": "line"
+      },
+      {
+        "id": "plot_01",
+        "type": "line"
+      },
+      {
+        "id": "plot_02",
+        "type": "line"
+      },
+      {
+        "id": "plot_03",
+        "type": "line"
+      },
+      {
+        "id": "plot_04",
+        "type": "line"
+      },
+      {
+        "id": "plot_05",
+        "type": "line"
+      }
+    ]
+  },
+  {
+    "name": "# TCG AI Tools-اختصاصی",
+    "short": "TCG AI Tools",
+    "inputs": [
+      {
+        "name": "Price",
+        "type": "source",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Bollinger length",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Bollinger Multiplier",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Overbought",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Oversold",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Length",
+        "type": "integer",
+        "defval": null,
+        "min": 1,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "id_00": "close",
+      "id_01": 20,
+      "id_02": 2,
+      "id_03": 70,
+      "id_04": 30,
+      "id_05": 14
+    },
+    "style_titles": {
+      "plot_00": {
+        "title": "Plot"
+      },
+      "plot_01": {
+        "size": "normal",
+        "title": "BB Cross"
+      },
+      "plot_02": {
+        "size": "normal",
+        "title": "BB Cross"
+      },
+      "plot_03": {
+        "title": "Backgroud Color"
+      },
+      "plot_04": {
+        "title": "Backgroud Color"
+      }
+    },
+    "default_styles": {
+      "plot_00": {
+        "color": "red",
+        "linewidth": 40,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_01": {
+        "color": "rgb(255, 105, 105)",
+        "plottype": "shape_triangle_down",
+        "display": 15
+      },
+      "plot_02": {
+        "color": "rgb(97, 255, 103)",
+        "plottype": "shape_triangle_up",
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": {
+      "palette_0": {
+        "colors": {
+          "0": {
+            "color": "red",
+            "style": 0,
+            "width": 40
+          },
+          "1": {
+            "color": "green",
+            "style": 0,
+            "width": 40
+          }
+        }
+      },
+      "palette_1": {
+        "colors": {
+          "0": {
+            "color": "rgba(76, 175, 80, 0.4)",
+            "style": 0,
+            "width": 1
+          }
+        }
+      },
+      "palette_2": {
+        "colors": {
+          "0": {
+            "color": "rgba(255, 82, 82, 0.4)",
+            "style": 0,
+            "width": 1
+          }
+        }
+      }
+    },
+    "precision": 2,
+    "plots": [
+      {
+        "id": "plot_00",
+        "type": "line"
+      },
+      {
+        "id": "plot_00c",
+        "type": "colorer"
+      },
+      {
+        "id": "plot_01",
+        "type": "shapes"
+      },
+      {
+        "id": "plot_02",
+        "type": "shapes"
+      },
+      {
+        "id": "plot_03",
+        "type": "bg_colorer"
+      },
+      {
+        "id": "plot_04",
+        "type": "bg_colorer"
+      }
+    ]
+  },
+  {
+    "name": "# UT Bot Alerts-اختصاصی",
+    "short": "UT Bot Alerts",
+    "inputs": [
+      {
+        "name": "Key Vaule.",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "ATR Period",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Signals from Heikin Ashi Candles",
+        "type": "bool",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      }
+    ],
+    "default_inputs": {
+      "a": 1,
+      "c": 10,
+      "h": false
+    },
+    "style_titles": {
+      "plot_0": {
+        "title": "Bar Color"
+      },
+      "plot_1": {
+        "location": "AboveBar",
+        "text": "Buy",
+        "title": "BUY"
+      },
+      "plot_2": {
+        "location": "BelowBar",
+        "text": "Sell",
+        "title": "SELL"
+      }
+    },
+    "default_styles": {
+      "plot_0": {},
+      "plot_1": {
+        "color": "#4CAF50",
+        "plottype": "shape_label_up",
+        "display": 15
+      },
+      "plot_2": {
+        "color": "#FF5252",
+        "plottype": "shape_label_down",
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": {
+      "paletteId1": {
+        "colors": {
+          "0": {
+            "color": "green",
+            "style": 0,
+            "width": 1
+          },
+          "1": {
+            "color": "red",
+            "style": 0,
+            "width": 1
+          }
+        }
+      }
+    },
+    "precision": 2,
+    "plots": [
+      {
+        "id": "plot_0",
+        "type": "bar_colorer"
+      },
+      {
+        "id": "plot_1",
+        "type": "shapes"
+      },
+      {
+        "id": "plot_2",
+        "type": "shapes"
+      }
+    ]
+  },
+  {
+    "name": "# VTX Oscillator-اختصاصی",
+    "short": "VTX Oscillator",
+    "inputs": [
+      {
+        "name": "Length",
+        "type": "integer",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": null
+      },
+      {
+        "name": "Source",
+        "type": "text",
+        "defval": null,
+        "min": null,
+        "max": null,
+        "options": [
+          "Open",
+          "High",
+          "Low",
+          "Close"
+        ]
+      }
+    ],
+    "default_inputs": {
+      "id_00": 14,
+      "id_01": "Close"
+    },
+    "style_titles": {
+      "plot_00": {
+        "title": "Plot"
+      },
+      "plot_01": {
+        "title": "Plot"
+      },
+      "plot_02": {
+        "title": "SRO VTX"
+      }
+    },
+    "default_styles": {
+      "plot_00": {
+        "color": "rgb(255,82,82)",
+        "linewidth": 2,
+        "plottype": 6,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_01": {
+        "color": "rgb(76,175,80)",
+        "linewidth": 2,
+        "plottype": 6,
+        "linestyle": 0,
+        "display": 15
+      },
+      "plot_02": {
+        "color": "rgb(33,150,243)",
+        "linewidth": 2,
+        "plottype": 0,
+        "linestyle": 0,
+        "display": 15
+      }
+    },
+    "ohlcPlots": null,
+    "palettes": null,
+    "precision": 2,
+    "plots": [
+      {
+        "id": "plot_00",
+        "type": "line"
+      },
+      {
+        "id": "plot_01",
+        "type": "line"
+      },
+      {
+        "id": "plot_02",
+        "type": "line"
+      }
+    ]
+  }
+]

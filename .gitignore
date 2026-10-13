@@ -1,0 +1,8 @@
+data/
+output/
+extract/api_id.txt
+*.rar
+__pycache__/
+*.py[cod]
+.venv/
+venv/
